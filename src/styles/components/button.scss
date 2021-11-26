@@ -1,6 +1,23 @@
 .button {
-  width: 260px;
-  padding: 12px 15px;
-  background: $color-primary-100;
+  display: block;
+  width: 240px;
+  padding: 14px 14px;
+  background: transparent;
+  border: 2px solid $color-primary-200;
   border-radius: 15px;
+  color: $color-primary-200;
+  
+  &:hover {
+    background: $color-primary-200;
+    color: $color-primary-100;
+  }
+
+  &:active {
+    background: $color-primary-100;
+    color: $color-primary-200;
+  }
+  
+  &:disabled {
+    border: 2px solid $color-primary-200;
+  }
 }

@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+		// &__item {
+
+		// }
+		&__link {
+      display: block;
+      padding: 5px 10px;
+      font-weight: 500;
+      color: $color-primary-200;
+		}
+}
