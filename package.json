@@ -10,7 +10,7 @@
     "lint:css": "stylelint **/*.scss",
     "lint:js": "eslint ./src",
     "lint": "concurrently \"npm run lint:html\" \"npm run lint:css\" \"npm run lint:js\"",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d src"
   },
   "keywords": [],
   "author": "",
