@@ -459,6 +459,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"3auaO":[function(require,module,exports) {
+'use strict';
 
 },{}]},["cSv3F","3auaO"], "3auaO", "parcelRequirefa1e")
 
