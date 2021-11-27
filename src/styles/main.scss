@@ -1,9 +1,12 @@
 @import "./utils/variables";
 @import "./fonts";
 @import "./normilize";
+@import "./components/head";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/socials";
-@import "./blocks/header";
 @import "./blocks/page";
+@import "./blocks/header";
+@import "./blocks/offers";
+@import "./blocks/footer";

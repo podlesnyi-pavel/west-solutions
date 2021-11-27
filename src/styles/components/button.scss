@@ -1,12 +1,16 @@
 .button {
   display: block;
   width: 240px;
-  padding: 14px 14px;
+  padding: 13px 16px 16px;
   background: transparent;
   border: 2px solid $color-primary-200;
   border-radius: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
   color: $color-primary-200;
-  
+  transition: background 0.4s;
+
   &:hover {
     background: $color-primary-200;
     color: $color-primary-100;
@@ -16,8 +20,8 @@
     background: $color-primary-100;
     color: $color-primary-200;
   }
-  
-  &:disabled {
-    border: 2px solid $color-primary-200;
-  }
+}
+
+.disabled {
+  /* stylelint-disable-line */border: 2px solid rgba($color: $color-primary-200, $alpha: 50%);
 }

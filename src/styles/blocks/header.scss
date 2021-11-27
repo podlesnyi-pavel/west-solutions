@@ -2,24 +2,20 @@
   min-height: 100vh;
   padding: 19px 0;
   background: url("../img/header.jpg") center/cover no-repeat;
-  
-  &__head {
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__bottom {
     display: flex;
     align-items: center;
     height: 80vh;
   }
+
   &__title {
     margin: 0;
     font-weight: bold;
     font-size: 50px;
     line-height: 68px;
-
   }
+
   &__descr {
     margin: 32px 0 0;
   }
