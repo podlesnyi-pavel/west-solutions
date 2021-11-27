@@ -1,0 +1,39 @@
+.subscribe {
+  padding: 40px 0;
+  background-color: $color-primary-100;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  &__text {
+    margin: 20px 0 0;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__button {
+    flex: 0 0 190px;
+    padding: 14px 16px;
+    background-color: $color-primary-200;
+    border: 2px solid $color-primary-200;
+    border-radius: 15px;
+    outline: none;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-secondary-500;
+    }
+
+    &:active {
+      background-color: $color-primary-200;
+    }
+  }
+}

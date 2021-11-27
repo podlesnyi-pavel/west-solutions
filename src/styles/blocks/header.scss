@@ -3,6 +3,13 @@
   padding: 19px 0;
   background: url("../img/header.jpg") center/cover no-repeat;
 
+  &__wrap-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 45px;
+  }
+
   &__bottom {
     display: flex;
     align-items: center;

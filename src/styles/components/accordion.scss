@@ -1,0 +1,52 @@
+.accordion {
+  margin: 80px 0 0;
+}
+
+.accordion-item {
+  padding: 0;
+  background: $color-secondary-500;
+}
+
+// .accordion-item:not(.collapsed) {
+// }
+
+.accordion-flush .accordion-item {
+  border-bottom: 1px solid $color-secondary-400;
+}
+
+.accordion-button {
+  padding: 24px 39px;
+  background-color: $color-section-gray;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $color-primary-300;
+  border: none;
+}
+
+.accordion-button:focus {
+  background: transparent;
+  border: none;
+}
+
+.accordion-button::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: url("../img/plus.svg") center/cover no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "";
+  width: 11px;
+  height: 2px;
+  background: url("../img/minus.svg") center/cover no-repeat;
+}
+
+.accordion-body {
+  padding: 24px 39px;
+  font-size: 13px;
+  line-height: 19px;
+  color: $color-primary-100;
+  background: $color-secondary-500;
+}

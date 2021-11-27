@@ -1,11 +1,7 @@
 .nav {
   display: flex;
-  justify-content: flex-end;
   padding: 0;
-
-  &--jc-center {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .menu {
@@ -20,6 +16,10 @@
     font-weight: 500;
     color: $color-primary-200;
     transition: color $transition-duration;
+
+    &--fw--600 {
+      font-weight: 600;
+    }
 
     &:hover {
       color: $color-primary-300;
