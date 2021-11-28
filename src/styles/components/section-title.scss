@@ -1,9 +1,13 @@
 .section-title {
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 75px;
   text-transform: uppercase;
   color: $color-secondary-100;
+
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
 }

@@ -1,6 +1,10 @@
 .questions {
-  padding: 120px 0;
-  background-color: $color-section-gray;
+  padding: 60px 0;
+  background-color: $color-gray;
+
+  @media (min-width: 768px) {
+    padding: 120px 0;
+  }
 }
 
 .container-sm {

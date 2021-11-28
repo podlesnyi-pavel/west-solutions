@@ -1,3 +1,49 @@
 .offers {
-  padding: 98px 120px;
+  padding: 68px 0 90px;
+
+  @media (min-width: 768px) {
+    padding: 98px 0 120px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__btn {
+    flex: 1 1 290px;
+    margin: 0 auto;
+    padding: 14px;
+    color: $color-primary-200;
+    background: $color-primary-300;
+    border: 2px solid $color-primary-300;
+    border-radius: 15px;
+    outline: none;
+    transition: background-color $transition-duration;
+
+    &:hover,
+    &:focus {
+      color: $color-primary-300;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $color-primary-200;
+      background: $color-primary-300;
+    }
+
+    @media (min-width: 576px) {
+      max-width: 290px;
+      margin: auto;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 295px);
+    justify-content: center;
+    gap: 20px;
+  }
 }

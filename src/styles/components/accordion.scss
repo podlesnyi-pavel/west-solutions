@@ -5,28 +5,37 @@
 .accordion-item {
   padding: 0;
   background: $color-secondary-500;
+  border-bottom: 2px solid $color-secondary-400;
 }
 
-// .accordion-item:not(.collapsed) {
-// }
-
-.accordion-flush .accordion-item {
+.accordion-flush .accordion-item:last-child {
+  border-bottom: none;
   border-bottom: 1px solid $color-secondary-400;
 }
 
+// .accordion-item:not(.collapsed) {
+//   box-shadow: 0 0 18px rgba(68, 68, 68, 9%);/* stylelint-disable-line */
+// }
+
 .accordion-button {
   padding: 24px 39px;
-  background-color: $color-section-gray;
+  background-color: $color-gray;
 }
 
 .accordion-button:not(.collapsed) {
   color: $color-primary-300;
   border: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) .accordion-item:not(.collapsed) {
+  box-shadow: 0 0 18px rgba(68, 68, 68, 9%);/* stylelint-disable-line */
 }
 
 .accordion-button:focus {
   background: transparent;
   border: none;
+  box-shadow: none;
 }
 
 .accordion-button::after {
@@ -44,7 +53,7 @@
 }
 
 .accordion-body {
-  padding: 24px 39px;
+  padding: 0 39px 24px;
   font-size: 13px;
   line-height: 19px;
   color: $color-primary-100;

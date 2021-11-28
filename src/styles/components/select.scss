@@ -1,0 +1,8 @@
+.form-select {
+  flex: 1 0 100%;
+  border-radius: 15px;
+
+  @media (min-width: 576px) {
+    flex-basis: 170px;
+  }
+}

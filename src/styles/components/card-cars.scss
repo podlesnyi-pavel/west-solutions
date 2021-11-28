@@ -1,0 +1,93 @@
+.card-cars {
+  width: 295px;
+  padding: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background-color: $color-secondary-500;
+  color: $color-secondary-200;
+  transition: transform $transition-duration, box-shadow $transition-duration;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(68, 68, 68, 0.9);/* stylelint-disable-line */
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    &--new {
+      &::after {
+        content: "New";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66.5px;
+        height: 24px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $color-primary-100;
+        color: $color-secondary-500;
+      }
+    }
+
+    &--sold {
+      &::before {
+        content: "Sold";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 75px;
+        color: $color-secondary-500;
+      }
+    }
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    color: $color-primary-100;
+  }
+
+  &__year {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    font-size: 17px;
+    line-height: 25px;
+    color: $color-secondary-200;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+    &-item {
+      color: $color-secondary-200;
+    }
+
+    &-item:not(:last-child)::after {
+      content: "|";
+      display: inline-block;
+      margin: 0 2px 0 5px;
+    }
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: $color-primary-100;
+  }
+}
