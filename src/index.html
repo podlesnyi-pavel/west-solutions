@@ -18,7 +18,7 @@
             <img class="logo__img" src="/logo.a0e06922.svg" alt="logo Monza Motosports">
           </a>
 
-          <div class="col-9 header__wrap-links">
+          <div class="col-xs-12 col-md-9 header__wrap-links">
             <nav class="nav">
               <ul class="menu">
                 <li class="menu__item">
@@ -45,7 +45,7 @@
         </div>
 
         <div class="row header__bottom">
-          <div class="col-8 header__content">
+          <div class="col-sm-12 col-md-10 col-xl-8 header__content">
             <h1 class="header__title">The right way to get a car</h1>
             <div class="row header__descr">
               <p class="col-md-6 col-xl-4 header__descr_item">
@@ -64,98 +64,647 @@
       </div>
     </header>
 
-    <section class="offers" id="offers">
-      <div class="container">
-        <div class="row">
-          <h2 class="col-12 text-center section-title">
-            CURRENT OFFERS
-          </h2>
-        </div>
-      </div>
-    </section>
-
-    <section class="subscribe">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 subscribe__descr">
-            <h2 class="subscribe__title">
-              Haven't found a suitable vehicle?
+    <main class="content">
+      <section class="offers" id="offers">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12 text-center section-title">
+              CURRENT OFFERS
             </h2>
   
-            <p class="subscribe__text">
-              Sign up for our newsletter and be the first to know when we publish new vehicle offers.
-            </p>
-          </div>
+            <div class="offers__actions">
+              <select class="form-select" aria-label="Default select example">
+                <option class="form-option" selected="">Year</option>
+                <option class="form-option" value="1">One</option>
+                <option class="form-option" value="2">Two</option>
+                <option class="form-option" value="3">Three</option>
+              </select>
   
-          <form class="col-sm-12 col-md-7 offset-1 subscribe__form" action="#" method="POST">
-            <input type="email" class="subscribe__mail input" placeholder="Enter your email">
+              <select class="form-select" aria-label="Default select example">
+                <option class="form-option" selected="">Make</option>
+                <option class="form-option" value="1">Honda</option>
+                <option class="form-option" value="2">Kia</option>
+                <option class="form-option" value="3">Toyota</option>
+                <option class="form-option" value="4">Volkswagen</option>
+              </select>
+  
+              <select class="form-select" aria-label="Default select example">
+                <option class="form-option" selected="">Model</option>
+                <option class="form-option" value="1">One</option>
+                <option class="form-option" value="2">Two</option>
+                <option class="form-option" value="3">Three</option>
+              </select>
+  
+              <select class="form-select" aria-label="Default select example">
+                <option class="form-option" selected="">Trim</option>
+                <option class="form-option" value="1">One</option>
+                <option class="form-option" value="2">Two</option>
+                <option class="form-option" value="3">Three</option>
+              </select>
+  
+              <select class="form-select" aria-label="Default select example">
+                <option class="form-option" selected="">Mileage</option>
+                <option class="form-option" value="1">One</option>
+                <option class="form-option" value="2">Two</option>
+                <option class="form-option" value="3">Three</option>
+              </select>
+  
+              <button class="offers__btn">40 cars</button>
+            </div>
+  
+            <div class="mt-4 offers__gallery">
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
 
-            <button type="submit" class="subscribe__button">
-              Subscribe now
-            </button>
-          </form>
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--new">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--sold">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body opacity-50">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--new">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--sold">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body opacity-50">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--new">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--sold">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body opacity-50">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap card-cars__img-wrap--new">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+
+              <a href="#" class="card-cars">
+                <div class="card-cars__img-wrap">
+                  <img src="/car10.c2d483d1.jpg" class="img-fluid card-cars__img" alt="car10">
+                </div>
+                <div class="card-cars__body">
+                  <h3 class="card-cars__title">
+                    <span class="card-cars__year">2019</span>
+                    Volkswagen Tiguan
+                  </h3>
+                  
+                  <div class="mt-3 card-cars__descr">
+                    <span class="card-cars__descr-item">19,855 km</span>
+                    <span class="card-cars__descr-item">Automatic</span>
+                    <span class="card-cars__descr-item">Diesel</span>
+                  </div>
+                  
+                  <div class="mt-4 card-cars__price">$34,888</div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="questions">
-      <div class="container container-sm">
-        <div class="row">
-          <h2 class="col-12 text-center section-title">
-            popular questions
-          </h2>
-
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  1. Scope
-                </button>
+      </section>
+  
+      <section class="subscribe">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 subscribe__descr">
+              <h2 class="subscribe__title">
+                Haven't found a suitable vehicle?
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem expedita quasi nam soluta deserunt fugit tenetur nulla ducimus modi?
+    
+              <p class="subscribe__text">
+                Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+              </p>
+            </div>
+  
+            <form class="col-sm-12 col-md-7 offset-md-1 mt-xs-3 mt-sm-3 subscribe__form" action="#" method="POST">
+              <input type="email" class="subscribe__mail input" placeholder="Enter your email">
+  
+              <button type="submit" class="subscribe__button">
+                Subscribe now
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+  
+      <section class="questions">
+        <div class="container container-sm">
+          <div class="row">
+            <h2 class="col-12 text-center section-title">
+              popular questions
+            </h2>
+  
+            <div class="accordion accordion-flush" id="accordionOfQuestions">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    1. Scope
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem expedita quasi nam soluta deserunt fugit tenetur nulla ducimus modi?
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  2. Vehicle characteristics
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate expedita dignissimos quisquam aut! Perspiciatis, possimus repellat? Odio, sapiente consequatur!
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    2. Vehicle characteristics
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate expedita dignissimos quisquam aut! Perspiciatis, possimus repellat? Odio, sapiente consequatur!
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  3. Warranty / guarantee
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p class="mb-2">
-                    3.1 The statutory warranty is completely excluded to the extent permitted by law.
-                  </p>
-                  <p class="mb-2">
-                    3.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
-                  </p>
-                  <p class="mb-2">
-                    3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
-                  </p>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    3. Warranty / guarantee
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    <p class="mb-2">
+                      3.1 The statutory warranty is completely excluded to the extent permitted by law.
+                    </p>
+                    <p class="mb-2">
+                      3.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+                    </p>
+                    <p class="mb-2">
+                      3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    4. Trade-in vehicle
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, omnis. Eligendi accusamus eveniet tenetur non enim excepturi nam qui quam!
+                  </div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    5. Home Delivery
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quaerat placeat odio fugiat aperiam qui cupiditate dolores necessitatibus ea odit?
+                  </div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    6. Right of return
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, possimus officia esse beatae distinctio cum porro consectetur eaque et cumque!
+                  </div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    7. Written form
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus vero totam aut blanditiis atque aperiam nam a excepturi dolores illo.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    8. Applicable law and place of jurisdiction
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionOfQuestions">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatum doloribus excepturi dolorem magni delectus vero, rem aliquid! Quibusdam, amet.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
