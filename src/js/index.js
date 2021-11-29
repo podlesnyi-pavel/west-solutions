@@ -17,8 +17,8 @@ input.addEventListener('input', () => {
   }
 });
 
-const carsBtn = subscribe.querySelector('.offers__btn');
+const offersBtn = subscribe.querySelector('.offers__btn');
 
-carsBtn.addEventListener('submit', (e) => {
+offersBtn.addEventListener('submit', (e) => {
   e.preventDefault();
 });

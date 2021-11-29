@@ -83,7 +83,11 @@
             </h2>
   
             <div class="offers__actions">
-              <form method="GET" class="was-validated offers__form">
+              <form
+                method="GET"
+                class="was-validated offers__form"
+                id="offers__form"
+              >
                 <select class="form-select" aria-label="Default select example">
                   <option class="form-option" selected>Year</option>
                   <option class="form-option" value="1">One</option>
@@ -120,7 +124,7 @@
                   <option class="form-option" value="3">Three</option>
                 </select>
   
-                <button type="submit" class="offers__btn">40 cars</button>
+                <button type="button" class="offers__btn">40 cars</button>
 
                 <div class="offers__down">
                   <div class="form-check mb-3">
@@ -134,7 +138,7 @@
   
                   <div class="offers__sort">
                     <span>Sort by </span>
-                    <button class="offers__sort-btn"></button>
+                    <button type="button" class="offers__sort-btn"></button>
                     <span>Publication date (ascending)</span>
                   </div>
                 </div>

@@ -68,15 +68,13 @@
   color: $color-secondary-400;
 }
 
-.form-check-input.is-valid, .was-validated .form-check-input:valid {
+.form-check-input.is-valid,
+.was-validated .form-check-input:valid {
   border-color: $color-secondary-400;
 }
 
-.form-select.is-valid:focus, .was-validated .form-select:valid:focus {
+.form-select.is-valid:focus,
+.was-validated .form-select:valid:focus {
   border-color: #198754;
   box-shadow: none;
-}
-
-.a {
-  border: 1px solid red;
 }
