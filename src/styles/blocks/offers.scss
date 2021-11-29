@@ -5,11 +5,15 @@
     padding: 98px 0 120px;
   }
 
-  &__actions {
+  &__form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  &__actions {
+    margin-top: 80px;
   }
 
   &__btn {
@@ -38,6 +42,31 @@
       max-width: 290px;
       margin: auto;
     }
+  }
+
+  &__available {
+    color: inherit;
+  }
+
+  &__down {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: inherit;
+  }
+
+  &__sort {
+    color: $color-secondary-400;
+  }
+
+  &__sort-btn {
+    width: 10px;
+    height: 13px;
+    margin: 0 13px 0 17px;
+    border: none;
+    background-color: transparent;
+    background: url('../img/sort.svg') center/cover no-repeat;
+    outline: none;
   }
 
   &__gallery {

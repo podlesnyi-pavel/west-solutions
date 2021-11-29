@@ -2,6 +2,14 @@
   padding: 40px 0;
   background-color: $color-primary-100;
 
+  &__descr {
+    text-align: center;
+
+    @media (min-width: 576px) {
+      text-align: left;
+    }
+  }
+
   &__title {
     margin: 0;
     font-weight: 600;
@@ -18,15 +26,21 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 15px;
+
+    @media (min-width: 576px) {
+      margin-top: 0;
+    }
   }
 
   &__button {
-    flex: 0 0 190px;
+    flex: 0 0 100%;
     padding: 14px 16px;
     background-color: $color-primary-200;
     border: 2px solid $color-primary-200;
     border-radius: 15px;
     outline: none;
+    transition: background-color $transition-duration;
 
     &:hover {
       background-color: transparent;
@@ -35,6 +49,10 @@
 
     &:active {
       background-color: $color-primary-200;
+    }
+
+    @media (min-width: 576px) {
+      flex: 0 0 190px;
     }
   }
 }

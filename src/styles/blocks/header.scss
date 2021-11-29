@@ -5,9 +5,7 @@
 
   &__wrap-links {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
     gap: 45px;
   }
 
@@ -20,7 +18,7 @@
   &__title {
     margin: 0;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 68px;
 
     @media (min-width: 576px) {

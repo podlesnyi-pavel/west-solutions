@@ -4,6 +4,7 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: $color-secondary-500;
   color: $color-secondary-200;
+  box-shadow: 0 0 5px rgba(68, 68, 68, 0.9);/* stylelint-disable-line */
   transition: transform $transition-duration, box-shadow $transition-duration;
 
   &:hover {

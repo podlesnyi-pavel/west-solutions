@@ -2,13 +2,15 @@
   display: block;
   width: calc(139px + 12px * 2);
   height: 35px;
+  text-align: center;
 
   &--size--big {
-    width: calc(191px + 12px * 2);
-    height: 48px;
-  }
+    width: calc(171px + 12px * 2);
+    height: 43px;
 
-  &__img {
-    width: 100%;
+    @media (min-width: 768px) {
+      width: calc(191px + 12px * 2);
+      height: 48px;
+    }
   }
 }

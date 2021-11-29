@@ -13,37 +13,39 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="row head">
-          <a href="#" class="logo col-3">
-            <img
-              class="logo__img"
-              src="./img/logo.svg"
-              alt="logo Monza Motosports"
-            >
-          </a>
-
-          <div class="col-xs-12 col-md-9 header__wrap-links">
-            <nav class="nav">
-              <ul class="menu">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Inventory</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Financing </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Contacts</a>
-                </li>
-              </ul>
-            </nav>
+        <div class="row">
+          <div class="col-12 head">
+            <a href="#" class="mg-fluid logo">
+              <img
+                class="logo__img"
+                src="./img/logo.svg"
+                alt="logo Monza Motosports"
+              >
+            </a>
   
-            <div class="socials">
-              <a href="https://www.facebook.com/" class="socials__item">
-                <img src="./img/facebook.svg" alt="icon facebook">
-              </a>
-              <a href="https://www.instagram.com/" class="socials__item">
-                <img src="./img/instagram.svg" alt="icon instagram">
-              </a>
+            <div class="header__wrap-links">
+              <nav class="nav">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Inventory</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Financing </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+    
+              <div class="socials">
+                <a href="https://www.facebook.com/" class="socials__item">
+                  <img src="./img/facebook.svg" alt="icon facebook">
+                </a>
+                <a href="https://www.instagram.com/" class="socials__item">
+                  <img src="./img/instagram.svg" alt="icon instagram">
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -81,45 +83,64 @@
             </h2>
   
             <div class="offers__actions">
-              <select class="form-select" aria-label="Default select example">
-                <option class="form-option" selected>Year</option>
-                <option class="form-option" value="1">One</option>
-                <option class="form-option" value="2">Two</option>
-                <option class="form-option" value="3">Three</option>
-              </select>
+              <form method="GET" class="was-validated offers__form">
+                <select class="form-select" aria-label="Default select example">
+                  <option class="form-option" selected>Year</option>
+                  <option class="form-option" value="1">One</option>
+                  <option class="form-option" value="2">Two</option>
+                  <option class="form-option" value="3">Three</option>
+                </select>
+    
+                <select class="form-select" aria-label="Default select example">
+                  <option class="form-option" selected>Make</option>
+                  <option class="form-option" value="1">Honda</option>
+                  <option class="form-option" value="2">Kia</option>
+                  <option class="form-option" value="3">Toyota</option>
+                  <option class="form-option" value="4">Volkswagen</option>
+                </select>
+    
+                <select class="form-select" aria-label="Default select example">
+                  <option class="form-option" selected>Model</option>
+                  <option class="form-option" value="1">One</option>
+                  <option class="form-option" value="2">Two</option>
+                  <option class="form-option" value="3">Three</option>
+                </select>
+    
+                <select class="form-select" aria-label="Default select example">
+                  <option class="form-option" selected>Trim</option>
+                  <option class="form-option" value="1">One</option>
+                  <option class="form-option" value="2">Two</option>
+                  <option class="form-option" value="3">Three</option>
+                </select>
+    
+                <select class="form-select" aria-label="Default select example">
+                  <option class="form-option" selected>Mileage</option>
+                  <option class="form-option" value="1">One</option>
+                  <option class="form-option" value="2">Two</option>
+                  <option class="form-option" value="3">Three</option>
+                </select>
   
-              <select class="form-select" aria-label="Default select example">
-                <option class="form-option" selected>Make</option>
-                <option class="form-option" value="1">Honda</option>
-                <option class="form-option" value="2">Kia</option>
-                <option class="form-option" value="3">Toyota</option>
-                <option class="form-option" value="4">Volkswagen</option>
-              </select>
+                <button type="submit" class="offers__btn">40 cars</button>
+
+                <div class="offers__down">
+                  <div class="form-check mb-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="validationFormCheck1"
+                    >
+                    <label class="form-check-label" for="validationFormCheck1">Instantly available vehicles</label>
+                  </div>
   
-              <select class="form-select" aria-label="Default select example">
-                <option class="form-option" selected>Model</option>
-                <option class="form-option" value="1">One</option>
-                <option class="form-option" value="2">Two</option>
-                <option class="form-option" value="3">Three</option>
-              </select>
-  
-              <select class="form-select" aria-label="Default select example">
-                <option class="form-option" selected>Trim</option>
-                <option class="form-option" value="1">One</option>
-                <option class="form-option" value="2">Two</option>
-                <option class="form-option" value="3">Three</option>
-              </select>
-  
-              <select class="form-select" aria-label="Default select example">
-                <option class="form-option" selected>Mileage</option>
-                <option class="form-option" value="1">One</option>
-                <option class="form-option" value="2">Two</option>
-                <option class="form-option" value="3">Three</option>
-              </select>
-  
-              <button class="offers__btn">40 cars</button>
+                  <div class="offers__sort">
+                    <span>Sort by </span>
+                    <button class="offers__sort-btn"></button>
+                    <span>Publication date (ascending)</span>
+                  </div>
+                </div>
+              </form>
             </div>
-  
+
             <div class="mt-4 offers__gallery">
               <a href="#" class="card-cars">
                 <div class="card-cars__img-wrap">
@@ -675,8 +696,10 @@
                 type="email"
                 class="subscribe__mail input"
                 placeholder="Enter your email"
+                required
+                id="input"
               >
-  
+
               <button type="submit" class="subscribe__button">
                 Subscribe now
               </button>
@@ -745,7 +768,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                   <button
-                    class="accordion-button"
+                    class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree"
@@ -757,7 +780,7 @@
                 </h2>
                 <div
                   id="flush-collapseThree"
-                  class="accordion-collapse collapse show"
+                  class="accordion-collapse collapse"
                   aria-labelledby="flush-headingThree"
                   data-bs-parent="#accordionOfQuestions"
                 >
@@ -910,12 +933,12 @@
         <div class="row head">
           <a href="#" class="col-3 logo logo--size--big">
             <img
-              class="logo__img"
+              class="img-fluid logo__img"
               src="./img/logo.svg"
               alt="logo Monza Motosports"
             >
           </a>
-          <nav class="col-6 nav">
+          <nav class="col-xs-12 col-md-6 nav">
             <ul class="menu">
               <li class="menu__item">
                 <a
@@ -944,7 +967,7 @@
             </ul>
           </nav>
 
-          <div class="col-1 socials">
+          <div class="col-xs-12 col-md-1 socials">
             <a href="https://www.facebook.com/" class="socials__item">
               <img src="./img/facebook.svg" alt="icon facebook">
             </a>

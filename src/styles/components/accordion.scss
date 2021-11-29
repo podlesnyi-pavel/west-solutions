@@ -1,5 +1,9 @@
 .accordion {
-  margin: 80px 0 0;
+  margin: 20px 0 0;
+
+  @media (min-width: 768px) {
+    margin: 80px 0 0;
+  }
 }
 
 .accordion-item {
@@ -13,10 +17,6 @@
   border-bottom: 1px solid $color-secondary-400;
 }
 
-// .accordion-item:not(.collapsed) {
-//   box-shadow: 0 0 18px rgba(68, 68, 68, 9%);/* stylelint-disable-line */
-// }
-
 .accordion-button {
   padding: 24px 39px;
   background-color: $color-gray;
@@ -26,10 +26,6 @@
   color: $color-primary-300;
   border: none;
   box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) .accordion-item:not(.collapsed) {
-  box-shadow: 0 0 18px rgba(68, 68, 68, 9%);/* stylelint-disable-line */
 }
 
 .accordion-button:focus {

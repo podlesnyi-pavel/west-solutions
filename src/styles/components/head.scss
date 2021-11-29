@@ -1,4 +1,10 @@
 .head {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
 }

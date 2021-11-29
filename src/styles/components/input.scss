@@ -6,4 +6,12 @@
   background-color: transparent;
   color: inherit;
   outline: none;
+
+  &:valid {
+    border-color: $color-secondary-700;
+  }
+
+  &--invalid {
+    border: 1px solid red;
+  }
 }
