@@ -1,7 +1,11 @@
 .header {
   min-height: 100vh;
   padding: 19px 0;
-  background: url("../img/header.jpg") center/cover no-repeat;
+  background: url("../img/header.jpg") 70% 50%/cover no-repeat;
+
+  @media (min-width: 992px) {
+    background: url("../img/header.jpg") center/cover no-repeat;
+  }
 
   &__wrap-links {
     display: flex;

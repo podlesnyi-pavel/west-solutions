@@ -1,5 +1,9 @@
 .offers {
-  padding: 68px 0 90px;
+  padding: 38px 0 50px;
+
+  @media (min-width: 576px) {
+    padding: 68px 0 90px;
+  }
 
   @media (min-width: 768px) {
     padding: 98px 0 120px;
@@ -12,8 +16,20 @@
     gap: 20px;
   }
 
+  &__title {
+    font-size: 30px;
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
+
   &__actions {
-    margin-top: 80px;
+    margin-top: 30px;
+
+    @media (min-width: 576px) {
+      margin-top: 80px;
+    }
   }
 
   &__btn {
@@ -51,9 +67,14 @@
   &__down {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     color: inherit;
+
+    @media (min-width: 576px) {
+      justify-content: space-between;
+    }
   }
 
   &__sort {
