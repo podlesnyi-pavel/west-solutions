@@ -4,7 +4,7 @@
 
 [MOCKUP](https://www.figma.com/file/UlBnJHOSYkW4KEPwusZfNQ/Test-task?node-id=0%3A1)
 
-[DEMO](https://podlesnyi-pavel.github.io/layout_creativeBakery/)
+[DEMO](https://podlesnyi-pavel.github.io/west-solutions/)
 
 TECHNOLOGIES:
 
