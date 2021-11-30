@@ -52,21 +52,61 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: inherit;
   }
 
   &__sort {
-    color: $color-secondary-400;
-  }
+    color: $color-secondary-200;
 
-  &__sort-btn {
-    width: 10px;
-    height: 13px;
-    margin: 0 13px 0 17px;
-    border: none;
-    background-color: transparent;
-    background: url('../img/sort.svg') center/cover no-repeat;
-    outline: none;
+    &-btn {
+      position: relative;
+      width: 68px;
+      height: 16px;
+      padding-right: 15px;
+      margin-right: 10px;
+      border: none;
+      background-color: transparent;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-primary-100;
+      outline: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 15px;
+        background: url("../img/sort.svg") center/contain no-repeat;
+      }
+    }
+
+    &-type {
+      padding: 12px;
+      border: none;
+      color: $color-secondary-200;
+      outline: none;
+      transition: color $color-primary-300;
+      cursor: pointer;
+      appearance: none;
+
+      &:hover {
+        color: $color-primary-300;
+      }
+
+      &:focus {
+        color: $color-primary-100;
+      }
+
+      &-item {
+        &:hover {
+          color: $color-primary-300;
+        }
+      }
+    }
   }
 
   &__gallery {
@@ -75,4 +115,99 @@
     justify-content: center;
     gap: 20px;
   }
+}
+
+.form-select {
+  flex: 1 0 100%;
+  border-radius: 15px;
+
+  @media (min-width: 576px) {
+    flex-basis: 170px;
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-check-input {
+  margin: auto;
+}
+
+.form-check-input:checked .form-check-label {
+  color: $color-primary-300;
+}
+
+.form-select:valid {
+  border-color: $color-secondary-700;
+}
+
+.form-check-input.is-invalid,
+.was-validated,
+.form-check-input:invalid {
+  border-color: #ced4da;
+}
+
+.form-check-input.is-invalid ~ .form-check-label,
+.was-validated .form-check-input:invalid ~ .form-check-label {
+  color: #ced4da;
+}
+
+.form-select.is-invalid,
+.was-validated .form-select:invalid {
+  border-color: #ced4da;
+  padding-right: 4.125rem;
+}
+
+.form-select.is-valid,
+.was-validated .form-select:valid {
+  border-color: #198754;
+  padding-right: 4.125rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center, center right 2.25rem;
+  background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-check-input.is-invalid,
+.was-validated .form-check-input:invalid {
+  border-color: $color-secondary-200;
+}
+
+.form-check-input.is-invalid:focus,
+.was-validated .form-check-input:invalid:focus {
+  box-shadow: none;
+}
+
+.form-check-input.is-valid:focus,
+.was-validated .form-check-input:valid:focus {
+  box-shadow: none;
+}
+
+.form-check-input.is-valid:checked,
+.was-validated .form-check-input:valid:checked {
+  background-color: $color-primary-300;
+  border-color: $color-primary-300;
+}
+
+.form-check-input.is-valid:checked,
+.was-validated .form-check-input:valid:checked + .form-check-label {
+  color: $color-primary-300;
+}
+
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: $color-secondary-200;
+}
+
+.form-check-input.is-valid,
+.was-validated .form-check-input:valid {
+  border-color: $color-secondary-200;
+}
+
+.form-select.is-valid:focus,
+.was-validated .form-select:valid:focus {
+  border-color: #198754;
+  box-shadow: none;
 }
